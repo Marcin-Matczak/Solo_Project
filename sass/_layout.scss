@@ -1,0 +1,50 @@
+/*General*/
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: $brand-font;
+    color: $body-color;
+}
+
+body {
+    padding: 15px;
+    margin: 0;
+    background-color: $body-color;
+}
+
+/*Layout*/
+
+.grid-layout { 
+    display: grid;
+    grid-template-areas: 
+    "sidebar topbar"
+    "sidebar content";
+    grid-template-columns: 200px auto;
+    grid-template-rows: 60px 100vh;      
+}
+
+.sidebar {
+    background-color: $sidebar-color;
+    grid-area: sidebar;
+    color: $body-color; 
+    display: flex; 
+    justify-content: center;        
+}
+
+.topbar {
+    background-color: $container-color;
+    grid-area: topbar; 
+    color: $sidebar-color; 
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid $body-color;
+    margin-left: 15px;
+}
+
+.content {
+    background-color: $body-color;
+    grid-area: content;
+    color: $sidebar-color;
+    border-top: 15px solid $body-color; 
+    display: flex;
+    flex-direction: column;
+}
