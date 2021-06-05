@@ -19,7 +19,7 @@ body {
     "sidebar topbar"
     "sidebar content";
     grid-template-columns: 200px auto;
-    grid-template-rows: 60px 100vh;      
+    grid-template-rows: 60px auto;      
 }
 
 .sidebar {
@@ -31,9 +31,8 @@ body {
 }
 
 .topbar {
-    background-color: $container-color;
+    background-color: rgb(82, 73, 73);;
     grid-area: topbar; 
-    color: $sidebar-color; 
     position: sticky;
     top: 0;
     border-bottom: 1px solid $body-color;

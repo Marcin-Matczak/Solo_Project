@@ -52,7 +52,7 @@
     padding: 10px;
     height: 60px;     
     font-size: 25px;
-    color: $sidebar-color;        
+    color: $body-color;        
 }
 
 .top-nav a {
@@ -61,22 +61,17 @@
     color: $sidebar-color;  
 }
 
-/*Content*/
+/*Content - General Statistic*/
 
 .general {
-    height: 50vh;
     background: $sidebar-color;
-    margin-left: 15px;  
+    margin-left: 15px; 
 }
 
-.links {
-    height: 50vh;
-    background: $sidebar-color;
-    margin: 15px 0px 0px 15px;
-}
-
-h3 {
-    margin-left: 15px;    
+.general img {
+    max-width: 600px;
+    margin-left: 400px;  
+    align-items: center;
 }
 
 .line {
@@ -84,7 +79,7 @@ h3 {
     margin: 30px 0;
 }
 
-.general-1 {
+.date {
     display: flex;
     justify-content: center;
     margin-top: 30px;
@@ -94,11 +89,92 @@ h3 {
 }
 
 .btn {
-    background: rgb(248, 180, 54);
+    background: $btn-color;
     margin-left: 15px;
+    color: $sidebar-color; 
 }
 
 .btn:hover {
     cursor: pointer;    
 }
+
+.img-cont {
+   margin-bottom: 15px;
+   position: inherit;
+}
+
+.img-cont img {
+    display: block;
+    margin: 0px auto;
+    border: 2px solid $body-color;    
+}
+
+.row-container {
+    
+    display: flex;
+    justify-content: center;
+}
+
+.row div{
+    position: inherit;
+}
+
+.row-container p {
+    border-bottom: 1px solid $body-color;
+}
+
+.row-container span {
+    display: inline-block;    
+    float: right;
+}
+
+.general h4 {
+   margin-left: 15px;
+}
+
+/* LINKS */
+
+.links {
+    background: $sidebar-color;
+    margin: 15px 0px 0px 15px;
+}
+
+h3 {
+    margin-left: 15px;  
+}
+
+.table-row {
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto; 
+    max-width: 600px;
+}
+
+table th, table td {
+    border-top: 1px solid $body-color;
+    border-top: 1px solid $body-color;
+    padding: 15px;
+  }
+
+tr:hover {
+    background-color: rgb(82, 73, 73);  
+}
+
+.table-row  button {
+    flex-basis: 10px;
+    width: 100px;
+    margin: 15px auto;    
+}
+
+table a {
+    text-decoration: none;
+}
+
+table td:last-child {
+   color: $sidebar-color;
+   float: right;   
+}
+
+
+
 
