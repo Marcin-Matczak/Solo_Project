@@ -1,14 +1,21 @@
 /*General*/
 *, *::before, *::after {
     box-sizing: border-box;
-    font-family: $brand-font;
     color: $body-color;
+}
+
+html {
+    font-family: $brand-font;
 }
 
 body {
     padding: 15px;
     margin: 0;
     background-color: $body-color;
+}
+
+i {
+    padding: 5px;
 }
 
 /*Layout*/
